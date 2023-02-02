@@ -24,6 +24,7 @@
 }
 
 .skills-intro {
+    font-size: 1.1em;
     width: 60%;
 }
 
@@ -32,21 +33,41 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-/* ----------------- BACKEND ---------------------- */
+
+/* ----------------- BACKEND & FRONTEND CARDS ---------------------- */
 
 .backend-container {
     margin-top: 30px;
-    width: 75%;
-    border: solid 1px var(--orange);
-    border-radius: 5px;
+    margin-bottom: 30px;
+    width: 65%;
+    border: solid 1px var(--dark-light);
+    border-radius: 10px;
+    box-shadow: rgba(21, 21, 21, 0.25) 0px 14px 28px, rgba(23, 23, 23, 0.22) 0px 10px 10px;
+    z-index: 100;
+}
+.frontend-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 65%;
+    border: solid 1px var(--dark-light);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    z-index: 100;
+}
+
+#frontend-logo {
+    width: 100px;
+    height: 100px;
+    margin-top: 5px;  
 }
 
 #database-logo {
     width: 100px;
     height: 100px;
-    margin-top: 30px;
+    margin-top: 5px;
 }
 
 .type-title-container {
@@ -58,6 +79,79 @@
 
 .type-title {
     font-family: Maven Pro, sans-serif;
+    font-weight: 500;
     color: var(--blue);
-    margin-top: 0;
+    margin-top: -5px;
 }
+
+.skills-matrix {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.matrix {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.skills-name-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 25%;
+}
+
+.skills-logo {
+    width: 80px;
+    height: 80px;
+}
+
+.skills-name {
+    font-family: "Maven Pro", sans-serif;
+    color: var(--white);
+    font-weight:400;
+    margin-left: -10px;
+}
+
+.progress-container {
+    width: 75%;
+    height: 10px;
+    border-radius: 5px;
+    background-color: var(--white);
+    margin-left: 2em;
+}
+
+.progress-bar {
+    transition: width 2s ease-in-out;
+    height: 10px;
+    background-color: var(--orange);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .matrix {
+    flex-direction: column;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  .skills-name-container {
+    width: 100%;
+    justify-content: center;
+  }
+  .backend-container {
+    width: 70%;
+  }
+  .frontend-container {
+    width: 70%;
+  }
+  .skills-matrix {
+    width: 100%;
+  }
+}
+
+

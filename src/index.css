@@ -3,7 +3,7 @@
 
 :root {
 
-    --bg : linear-gradient(to top, #070d2b, #000312);
+    --bg : linear-gradient(to top, #031014, #000312);
     --white : #ffffff;
     --nav : rgba(0, 0, 0, 0.2);
     --purple : #8c52ff;
@@ -12,7 +12,7 @@
     --blue : #298dd4;
     --dark : #121111;
     --dark2 : #000000;
-    --dark-light : rgb(55, 58, 71, 0.7);
+    --dark-light : #373a47b3;
     --logo: #dfdbdb;
  }
 

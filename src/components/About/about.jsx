@@ -11,7 +11,7 @@ const About = () => {
   
     useEffect(() => {
       function handleScroll() {
-        if (window.scrollY > 250 && window.scrollY < 750) {
+        if (window.scrollY > 250 && window.scrollY < 850) {
           setLineWidth("20vw");
           setIsOnTargetDiv(true);
         } else if (isOnTargetDiv) {
