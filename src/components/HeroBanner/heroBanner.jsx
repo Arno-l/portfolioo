@@ -1,9 +1,9 @@
 import React from "react";
 import "./heroBanner.css";
-import rubyLogo from "../../assets/images/ruby.png";
+//import rubyLogo from "../../assets/images/ruby.png";
 import linkedinLogo from "../../assets/images/linkedin.png";
 import githubLogo from "../../assets/images/github.png";
-import maltLogo from "../../assets/images/malt-logo.png";
+import maltLogo from "../../assets/images/malt.png";
 
 
 const HeroBanner = () => {
@@ -18,7 +18,7 @@ const HeroBanner = () => {
                 ARNAUD
                 </span>
                 <div id="job-container">
-                <img style={{width:"3.3em",height:"3.3em"}} src={rubyLogo} alt="ruby-logo" /><span id="job"> Développeur Web Junior</span>
+                <img style={{width:"3.3em",height:"3.3em"}} src="#" alt="ruby-logo" /><span id="job"> Développeur web full-stack React/RoR</span>
                 </div>
                 <div className="social-banner">
                   <a className="social-btn" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/arnaud-lucciarini-9808a0221/" style={{textDecoration:"none"}}><img style={{width:"3em",height:"3em"}} src={linkedinLogo} alt="linkedin-logo"/></a>

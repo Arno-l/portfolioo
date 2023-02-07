@@ -34,7 +34,7 @@ const About = () => {
 
     return(
         <>
-            <div className="about-title">
+            <div className="general-title">
                 <h1>A PROPOS</h1>
                 <div  className="line" style={{ width: lineWidth }} />
             </div>  

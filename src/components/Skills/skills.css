@@ -1,156 +1,99 @@
-.skills-title {
-    width: 100%;
-    text-align: start;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Montserrat, sans-serif;
-    margin-top: 4em;
-    font-weight:700;
-    font-size: 1.2em;
-    color: var(--white);
-    transition: width 1.5s ease-in-out;
-}
-
 .skills-container {
-    width:100%;
-    box-sizing: border-box;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Roboto, sans-serif;
-    color: var(--white);
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto, sans-serif;
+  color: var(--white);
+  margin-top: 30px;
 }
 
 .skills-intro {
-    font-size: 1.1em;
-    width: 60%;
+  font-size: 1.1em;
+  width: 60%;
 }
 
-.skills-types {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.skills-cards-container {
+  max-width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 16px;
+  margin-top: 30px;
 }
 
-
-/* ----------------- BACKEND & FRONTEND CARDS ---------------------- */
-
-.backend-container {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    width: 65%;
-    border: solid 1px var(--dark-light);
-    border-radius: 10px;
-    box-shadow: rgba(21, 21, 21, 0.25) 0px 14px 28px, rgba(23, 23, 23, 0.22) 0px 10px 10px;
-    z-index: 100;
-}
-.frontend-container {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    width: 65%;
-    border: solid 1px var(--dark-light);
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    z-index: 100;
+.skills-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark2);
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-#frontend-logo {
-    width: 100px;
-    height: 100px;
-    margin-top: 5px;  
+.skills-card:hover,
+.skills-card:focus {
+    background-color: var(--white);
 }
 
-#database-logo {
-    width: 100px;
-    height: 100px;
-    margin-top: 5px;
-}
-
-.type-title-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.type-title {
-    font-family: Maven Pro, sans-serif;
-    font-weight: 500;
-    color: var(--blue);
-    margin-top: -5px;
-}
-
-.skills-matrix {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-}
-
-.matrix {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.skills-name-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 25%;
+.skills-card:hover .skills-logo,
+.skills-card:focus .skill-logo {
+    transform: scale(1.2);
+    transition: transform 1s;
 }
 
 .skills-logo {
-    width: 80px;
-    height: 80px;
+  width: 200px;
+  height: 200px;
+  transition: ease-in-out 1s;
 }
 
-.skills-name {
-    font-family: "Maven Pro", sans-serif;
-    color: var(--white);
-    font-weight:400;
-    margin-left: -10px;
+.code-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top:5px;
 }
 
-.progress-container {
-    width: 75%;
-    height: 10px;
-    border-radius: 5px;
-    background-color: var(--white);
-    margin-left: 2em;
+.skill-code {
+    color: var(--dark2);
 }
 
-.progress-bar {
-    transition: width 2s ease-in-out;
-    height: 10px;
-    background-color: var(--orange);
-    box-sizing: border-box;
-    border-radius: 5px;
+#git {
+    width:120px;
+    height:120px;
 }
-
 
 @media only screen and (max-width: 1200px) {
-  .matrix {
-    flex-direction: column;
-    margin-bottom: 30px;
-    justify-content: center;
+  .skills-cards-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
-  .skills-name-container {
-    width: 100%;
-    justify-content: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .skills-cards-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
   }
-  .backend-container {
-    width: 70%;
-  }
-  .frontend-container {
-    width: 70%;
-  }
-  .skills-matrix {
-    width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+    .skills-cards-container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+    }
+}
+
+@media only screen and (max-width: 440px) {
+  .skills-cards-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(12, 1fr);
   }
 }
 
