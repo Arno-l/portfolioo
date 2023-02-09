@@ -50,24 +50,31 @@ const Skills = () => {
         </p>
         <div>
           <div className="skills-cards-container">
+            <a target="_blank" rel="noreferrer" href="https://developer.mozilla.org/fr/docs/Glossary/HTML5" style={{textDecoration:"none"}}>
             <div className="skills-card">
               <div className="code-container">
               <code className="skill-code">html5</code>
               </div>
               <img className="skills-logo" src={htmlLogo} alt="html5" />
             </div>
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://developer.mozilla.org/fr/docs/Web/CSS" style={{textDecoration:"none"}}>
             <div className="skills-card">
             <div className="code-container">
               <code className="skill-code">css3</code>
               </div>
               <img className="skills-logo" src={cssLogo} alt="css3" />
             </div>
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://sass-lang.com/" style={{textDecoration:"none"}}>
             <div className="skills-card">
             <div className="code-container">
               <code className="skill-code">Sass</code>
               </div>
               <img className="skills-logo" src={sassLogo} alt="Sass" />
             </div>
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://developer.mozilla.org/fr/docs/Web/JavaScript" style={{textDecoration:"none"}}>
             <div className="skills-card">
             <div className="code-container">
               <code className="skill-code">Javascript</code>
@@ -78,18 +85,24 @@ const Skills = () => {
                 alt="Javascript"
               />
             </div>
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://fr.reactjs.org/" style={{textDecoration:"none"}}>
             <div className="skills-card">
             <div className="code-container">
               <code className="skill-code">React.js</code>
               </div>
               <img className="skills-logo" src={reactLogo} alt="React" />
             </div>
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://fr.wikipedia.org/wiki/Ruby" style={{textDecoration:"none"}}>
             <div className="skills-card">
             <div className="code-container">
               <code className="skill-code">Ruby</code>
               </div>
               <img className="skills-logo" src={rubyLogo} alt="Ruby" />
             </div>
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://rubyonrails.org/" style={{textDecoration:"none"}}>
             <div className="skills-card">
             <div className="code-container">
               <code className="skill-code">Ruby on Rails</code>
@@ -100,24 +113,33 @@ const Skills = () => {
                 alt="Ruby on Rails"
               />
             </div>
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://www.postgresql.org/" style={{textDecoration:"none"}}>
             <div className="skills-card">
             <div className="code-container">
               <code className="skill-code">PostgreSQL</code>
               </div>
               <img className="skills-logo" src={pgLogo} alt="PostgreSQL" />
             </div>
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://fr.wikipedia.org/wiki/Structured_Query_Language" style={{textDecoration:"none"}}>
             <div className="skills-card">
             <div className="code-container">
               <code className="skill-code">SQL</code>
               </div>
               <img className="skills-logo" src={sqlLogo} alt="SQL" />
             </div>
+            </a>
+            
             <div className="skills-card">
+            <a target="_blank" rel="noreferrer" href="https://git-scm.com/" style={{textDecoration:"none"}}>
             <div className="code-container">
-              <code style={{marginTop:"-85px"}} className="skill-code">git</code>
+              <code style={{marginTop:"-80px"}} className="skill-code">git</code>
               </div>
               <img className="skills-logo" id="git" src={gitLogo} alt="git" />
+              </a>
             </div>
+            
           </div>
         </div>
       </div>
