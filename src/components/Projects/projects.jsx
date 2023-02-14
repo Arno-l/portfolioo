@@ -17,9 +17,13 @@ const Projects = () => {
   const [lineWidth, setLineWidth] = useState("0vw");
   const [isOnTargetDiv, setIsOnTargetDiv] = useState(true);
 
+
   useEffect(() => {
     function handleScroll() {
-      if (window.scrollY > 2200 && window.scrollY < 3200) {
+      if (window.innerWidth < 440 && window.scrollY > 3600) {
+        setLineWidth("20vw");
+        setIsOnTargetDiv(true);
+      } else if (window.innerWidth > 440 && window.scrollY > 2300 && window.scrollY < 4400) {
         setLineWidth("20vw");
         setIsOnTargetDiv(true);
       } else if (isOnTargetDiv) {
@@ -77,6 +81,8 @@ const Projects = () => {
                 <img className="techno-logo" src={sassLogo} alt="Sass"/>
                 <img className="techno-logo" src={javascriptLogo} alt="javascript"/>
                 <img className="techno-logo" src={reactLogo} alt="react"/>
+                <img className="techno-logo" src={rubyLogo} alt="Ruby"/>
+                <img className="techno-logo" src={railsLogo} alt="Ruby on Rails"/>
                 <img className="techno-logo" src={pgLogo} alt="postgresql"/>
               </div>
               <div className="project-btn">

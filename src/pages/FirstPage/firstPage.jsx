@@ -3,7 +3,7 @@ import "./firstPage.css";
 import { useNavigate } from "react-router-dom";
 //import Logo from "../../components/Logo/logo";
 //import { Canvas } from 'react-three-fiber';
-import myLogo from "../../assets/images/logo-aLDev.png";
+import myLogo from "../../assets/images/a.lcci.png";
 import  AOS  from 'aos';
 import "aos/dist/aos.css";
 import LoadingIcons from 'react-loading-icons';
@@ -30,15 +30,13 @@ const FirstPage = () => {
         <>
         <div className="firstpage-ctn">
          <div data-aos="fade-up" className="big-logo-aldev-ctn">
-            <img src={myLogo} alt="logo aLDev"/>
-            <span id="underscore">_</span>
+            <img src={myLogo} style={{width:"80%"}} alt="logo aLDev"/>
          </div> 
          { isLoading ?
          <LoadingIcons.ThreeDots
             data-aos="fade-up"
             width={80}
             height={80}
-            style={{marginTop:"100px"}}
          /> : <></>
          }
          </div>

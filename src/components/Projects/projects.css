@@ -133,7 +133,7 @@
 
 .project-card:hover .project-line ,
 .project-card:focus .project-line {
-    width: 60%;
+    width: 75%;
 }
   
 .project-card:hover .technos-container ,

@@ -17,14 +17,10 @@
 
 .big-logo-aldev-ctn {
     display: flex;
+
     justify-content: center;
     align-items: flex-end;
-    margin-top: 130px;
+    margin-top: 50px;
 }
 
-#underscore {
-    font-size:4rem;
-    margin-bottom: -10px;
-    margin-left: -10px;
-    color: var(--white);
-}
+

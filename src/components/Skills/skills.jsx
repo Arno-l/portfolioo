@@ -22,7 +22,7 @@ const Skills = () => {
       AOS.init({
         duration: 1200,
       });
-      if (window.scrollY > 750 && window.scrollY < 1600) {
+      if (window.scrollY > 750 && window.scrollY < 2200) {
         setLineWidth("20vw");
         setIsOnTargetDiv(true);
       } else if (isOnTargetDiv) {
