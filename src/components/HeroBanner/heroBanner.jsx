@@ -18,7 +18,7 @@ const HeroBanner = () => {
                 ARNAUD
                 </span>
                 <div id="job-container">
-                <img style={{width:"2.5em",height:"2.5em"}} src={responsiveLogo} alt="responsive-logo" /><span id="job"> Développeur web full-stack React/RoR</span>
+                <img style={{width:"2.5em",height:"2.5em"}} src={responsiveLogo} alt="responsive-logo" /><span id="job"> Développeur web React/RoR</span>
                 </div>
                 <div className="social-banner">
                   <a className="social-btn" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/arnaud-lucciarini-9808a0221/" style={{textDecoration:"none"}}><img style={{width:"3em",height:"3em"}} src={linkedinLogo} alt="linkedin-logo"/></a>
